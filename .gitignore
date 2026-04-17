@@ -1,5 +1,75 @@
+# Virtual Environments
 venv/
+env/
+ENV/
+.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Data and Logs
 data/
 logs/
 *.parquet
+*.csv
+*.xlsx
+
+# Environment Variables
+.env
+.env.local
 *.env
+
+# OS
+.DS_Store
+Thumbs.db
+.vscode-folder
+
+# Project Specific
+screenshots/
+*.log
+.cache/
+temp/
+tmp/
