@@ -19,6 +19,7 @@ peewee==4.0.4
 pillow==11.3.0
 platformdirs==4.4.0
 protobuf==6.33.6
+pytest==7.4.3
 pyarrow==21.0.0
 pycparser==2.23
 pyparsing==3.3.2

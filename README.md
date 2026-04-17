@@ -359,15 +359,33 @@ See `requirements.txt` for complete dependency list.
 
 ## Testing
 
-Run data validation:
+Run the test suite:
 ```bash
-python src/processing/validate_data.py
+pytest
 ```
 
-Test logger functionality:
+Run tests with verbose output:
 ```bash
-python -c "from src.utils.logger import get_logger; logger = get_logger('test'); logger.info('Logger working')"
+pytest -v
 ```
+
+Run specific test file:
+```bash
+pytest tests/test_risk_metrics.py
+```
+
+Run tests with coverage:
+```bash
+pytest --cov=src tests/
+```
+
+**Test Coverage:**
+- `test_risk_metrics.py` - Sharpe ratio and maximum drawdown calculations
+- `test_config.py` - Configuration values and constants
+- `test_data_validation.py` - Data quality and validation rules
+- `test_helpers.py` - Utility functions for data processing
+
+All 35 unit tests pass with zero failures.
 
 ---
 
